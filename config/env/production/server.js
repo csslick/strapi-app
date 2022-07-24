@@ -1,7 +1,7 @@
 module.exports = ({ env }) => ({
-  host: env('HOST', '0.0.0.0'),
-  port: env.int('PORT', 1337),
+  url: env("https://git.heroku.com/strapi-app-csslick.git"),
+  proxy: true,
   app: {
-    keys: env.array('APP_KEYS', ['GZVgBtAKaJibCjFiqktLXw==','FlTfUoeKZW2hmhF3PlFxtg==','iBdN3UrSvVKfjeKDD6aGBg==','wUWzbQoUkncikAcKLW6aiQ=='])
+    keys: env.array("APP_KEYS", ["testKey1", "testKey2"]),
   },
 });
